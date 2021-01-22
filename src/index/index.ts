@@ -166,5 +166,4 @@ class RootView extends View {
     }
 }
 
-
 Hummer.render(new RootView())
