@@ -1,1 +1,1042 @@
-(()=>{var t={932:(t,r,e)=>{e(285);var n=e(820);n.JSON||(n.JSON={stringify:JSON.stringify}),t.exports=function(t,r,e){return n.JSON.stringify.apply(null,arguments)}},489:t=>{t.exports=function(t){if("function"!=typeof t)throw TypeError(String(t)+" is not a function");return t}},744:(t,r,e)=>{var n=e(406);t.exports=function(t){if(!n(t))throw TypeError(String(t)+" is not an object");return t}},233:t=>{var r={}.toString;t.exports=function(t){return r.call(t).slice(8,-1)}},576:(t,r,e)=>{var n=e(183),o=e(431),u=e(473);t.exports=n?function(t,r,e){return o.f(t,r,u(1,e))}:function(t,r,e){return t[r]=e,t}},473:t=>{t.exports=function(t,r){return{enumerable:!(1&t),configurable:!(2&t),writable:!(4&t),value:r}}},183:(t,r,e)=>{var n=e(561);t.exports=!n((function(){return 7!=Object.defineProperty({},1,{get:function(){return 7}})[1]}))},300:(t,r,e)=>{var n=e(938),o=e(406),u=n.document,i=o(u)&&o(u.createElement);t.exports=function(t){return i?u.createElement(t):{}}},518:(t,r,e)=>{"use strict";var n=e(938),o=e(589).f,u=e(458),i=e(820),c=e(950),f=e(576),a=e(866),p=function(t){var r=function(r,e,n){if(this instanceof t){switch(arguments.length){case 0:return new t;case 1:return new t(r);case 2:return new t(r,e)}return new t(r,e,n)}return t.apply(this,arguments)};return r.prototype=t.prototype,r};t.exports=function(t,r){var e,s,l,y,h,v,b,d,g=t.target,w=t.global,O=t.stat,x=t.proto,m=w?n:O?n[g]:(n[g]||{}).prototype,j=w?i:i[g]||(i[g]={}),S=j.prototype;for(l in r)e=!u(w?l:g+(O?".":"#")+l,t.forced)&&m&&a(m,l),h=j[l],e&&(v=t.noTargetGet?(d=o(m,l))&&d.value:m[l]),y=e&&v?v:r[l],e&&typeof h==typeof y||(b=t.bind&&e?c(y,n):t.wrap&&e?p(y):x&&"function"==typeof y?c(Function.call,y):y,(t.sham||y&&y.sham||h&&h.sham)&&f(b,"sham",!0),j[l]=b,x&&(a(i,s=g+"Prototype")||f(i,s,{}),i[s][l]=y,t.real&&S&&!S[l]&&f(S,l,y)))}},561:t=>{t.exports=function(t){try{return!!t()}catch(t){return!0}}},950:(t,r,e)=>{var n=e(489);t.exports=function(t,r,e){if(n(t),void 0===r)return t;switch(e){case 0:return function(){return t.call(r)};case 1:return function(e){return t.call(r,e)};case 2:return function(e,n){return t.call(r,e,n)};case 3:return function(e,n,o){return t.call(r,e,n,o)}}return function(){return t.apply(r,arguments)}}},909:(t,r,e)=>{var n=e(820),o=e(938),u=function(t){return"function"==typeof t?t:void 0};t.exports=function(t,r){return arguments.length<2?u(n[t])||u(o[t]):n[t]&&n[t][r]||o[t]&&o[t][r]}},938:(t,r,e)=>{var n=function(t){return t&&t.Math==Math&&t};t.exports=n("object"==typeof globalThis&&globalThis)||n("object"==typeof window&&window)||n("object"==typeof self&&self)||n("object"==typeof e.g&&e.g)||function(){return this}()||Function("return this")()},866:t=>{var r={}.hasOwnProperty;t.exports=function(t,e){return r.call(t,e)}},347:(t,r,e)=>{var n=e(183),o=e(561),u=e(300);t.exports=!n&&!o((function(){return 7!=Object.defineProperty(u("div"),"a",{get:function(){return 7}}).a}))},52:(t,r,e)=>{var n=e(561),o=e(233),u="".split;t.exports=n((function(){return!Object("z").propertyIsEnumerable(0)}))?function(t){return"String"==o(t)?u.call(t,""):Object(t)}:Object},458:(t,r,e)=>{var n=e(561),o=/#|\.prototype\./,u=function(t,r){var e=c[i(t)];return e==a||e!=f&&("function"==typeof r?n(r):!!r)},i=u.normalize=function(t){return String(t).replace(o,".").toLowerCase()},c=u.data={},f=u.NATIVE="N",a=u.POLYFILL="P";t.exports=u},406:t=>{t.exports=function(t){return"object"==typeof t?null!==t:"function"==typeof t}},431:(t,r,e)=>{var n=e(183),o=e(347),u=e(744),i=e(24),c=Object.defineProperty;r.f=n?c:function(t,r,e){if(u(t),r=i(r,!0),u(e),o)try{return c(t,r,e)}catch(t){}if("get"in e||"set"in e)throw TypeError("Accessors not supported");return"value"in e&&(t[r]=e.value),t}},589:(t,r,e)=>{var n=e(183),o=e(126),u=e(473),i=e(248),c=e(24),f=e(866),a=e(347),p=Object.getOwnPropertyDescriptor;r.f=n?p:function(t,r){if(t=i(t),r=c(r,!0),a)try{return p(t,r)}catch(t){}if(f(t,r))return u(!o.f.call(t,r),t[r])}},126:(t,r)=>{"use strict";var e={}.propertyIsEnumerable,n=Object.getOwnPropertyDescriptor,o=n&&!e.call({1:2},1);r.f=o?function(t){var r=n(this,t);return!!r&&r.enumerable}:e},820:t=>{t.exports={}},308:t=>{t.exports=function(t){if(null==t)throw TypeError("Can't call method on "+t);return t}},248:(t,r,e)=>{var n=e(52),o=e(308);t.exports=function(t){return n(o(t))}},24:(t,r,e)=>{var n=e(406);t.exports=function(t,r){if(!n(t))return t;var e,o;if(r&&"function"==typeof(e=t.toString)&&!n(o=e.call(t)))return o;if("function"==typeof(e=t.valueOf)&&!n(o=e.call(t)))return o;if(!r&&"function"==typeof(e=t.toString)&&!n(o=e.call(t)))return o;throw TypeError("Can't convert object to primitive value")}},285:(t,r,e)=>{var n=e(518),o=e(909),u=e(561),i=o("JSON","stringify"),c=/[\uD800-\uDFFF]/g,f=/^[\uD800-\uDBFF]$/,a=/^[\uDC00-\uDFFF]$/,p=function(t,r,e){var n=e.charAt(r-1),o=e.charAt(r+1);return f.test(t)&&!a.test(o)||a.test(t)&&!f.test(n)?"\\u"+t.charCodeAt(0).toString(16):t},s=u((function(){return'"\\udf06\\ud834"'!==i("\udf06\ud834")||'"\\udead"'!==i("\udead")}));i&&n({target:"JSON",stat:!0,forced:s},{stringify:function(t,r,e){var n=i.apply(null,arguments);return"string"==typeof n?n.replace(c,p):n}})},899:(t,r,e)=>{var n=e(932);t.exports=n}},r={};function e(n){if(r[n])return r[n].exports;var o=r[n]={exports:{}};return t[n](o,o.exports,e),o.exports}e.n=t=>{var r=t&&t.__esModule?()=>t.default:()=>t;return e.d(r,{a:r}),r},e.d=(t,r)=>{for(var n in r)e.o(r,n)&&!e.o(t,n)&&Object.defineProperty(t,n,{enumerable:!0,get:r[n]})},e.g=function(){if("object"==typeof globalThis)return globalThis;try{return this||new Function("return this")()}catch(t){if("object"==typeof window)return window}}(),e.o=(t,r)=>Object.prototype.hasOwnProperty.call(t,r),(()=>{"use strict";function t(r,e){return(t=Object.setPrototypeOf||function(t,r){return t.__proto__=r,t})(r,e)}function r(t){return(r=Object.setPrototypeOf?Object.getPrototypeOf:function(t){return t.__proto__||Object.getPrototypeOf(t)})(t)}function n(t){return(n="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}function o(t,r){return!r||"object"!==n(r)&&"function"!=typeof r?function(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return t}(t):r}var u=e(899),i=e.n(u);const c=__GLOBAL__;var f=function(e){!function(r,e){if("function"!=typeof e&&null!==e)throw new TypeError("Super expression must either be null or a function");r.prototype=Object.create(e&&e.prototype,{constructor:{value:r,writable:!0,configurable:!0}}),e&&t(r,e)}(a,e);var n,u,f=(n=a,u=function(){if("undefined"==typeof Reflect||!Reflect.construct)return!1;if(Reflect.construct.sham)return!1;if("function"==typeof Proxy)return!0;try{return Date.prototype.toString.call(Reflect.construct(Date,[],(function(){}))),!0}catch(t){return!1}}(),function(){var t,e=r(n);if(u){var i=r(this).constructor;t=Reflect.construct(e,arguments,i)}else t=e.apply(this,arguments);return o(this,t)});function a(){var t;!function(t,r){if(!(t instanceof r))throw new TypeError("Cannot call a class as a function")}(this,a),(t=f.call(this)).style={width:"100%",height:"100%"};var r=new c.TextArea;r.style={width:"100%",height:"100%"},t.appendChild(r);var e=new c.Request;return e.url=c.Hummer.pageInfo.params.url,e.send((function(t){r.text=i()(t)})),t}return a}(c.View);c.Hummer.render(new f)})()})();
+/******/ (() => { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js":
+/*!******************************************************************************************************************************!*\
+  !*** ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js ***!
+  \******************************************************************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => /* binding */ _assertThisInitialized
+/* harmony export */ });
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+/***/ }),
+
+/***/ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/@babel/runtime/helpers/esm/classCallCheck.js":
+/*!***********************************************************************************************************************!*\
+  !*** ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/@babel/runtime/helpers/esm/classCallCheck.js ***!
+  \***********************************************************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => /* binding */ _classCallCheck
+/* harmony export */ });
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+/***/ }),
+
+/***/ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/@babel/runtime/helpers/esm/createSuper.js":
+/*!********************************************************************************************************************!*\
+  !*** ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/@babel/runtime/helpers/esm/createSuper.js ***!
+  \********************************************************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => /* binding */ _createSuper
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/getPrototypeOf */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_helpers_esm_isNativeReflectConstruct__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/isNativeReflectConstruct */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/@babel/runtime/helpers/esm/isNativeReflectConstruct.js");
+/* harmony import */ var _babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/possibleConstructorReturn */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+
+
+
+function _createSuper(Derived) {
+  var hasNativeReflectConstruct = (0,_babel_runtime_helpers_esm_isNativeReflectConstruct__WEBPACK_IMPORTED_MODULE_1__.default)();
+  return function _createSuperInternal() {
+    var Super = (0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_0__.default)(Derived),
+        result;
+
+    if (hasNativeReflectConstruct) {
+      var NewTarget = (0,_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_0__.default)(this).constructor;
+      result = Reflect.construct(Super, arguments, NewTarget);
+    } else {
+      result = Super.apply(this, arguments);
+    }
+
+    return (0,_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__.default)(this, result);
+  };
+}
+
+/***/ }),
+
+/***/ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js":
+/*!***********************************************************************************************************************!*\
+  !*** ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js ***!
+  \***********************************************************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => /* binding */ _getPrototypeOf
+/* harmony export */ });
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+/***/ }),
+
+/***/ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/@babel/runtime/helpers/esm/inherits.js":
+/*!*****************************************************************************************************************!*\
+  !*** ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/@babel/runtime/helpers/esm/inherits.js ***!
+  \*****************************************************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => /* binding */ _inherits
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_setPrototypeOf__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/setPrototypeOf */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js");
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) (0,_babel_runtime_helpers_esm_setPrototypeOf__WEBPACK_IMPORTED_MODULE_0__.default)(subClass, superClass);
+}
+
+/***/ }),
+
+/***/ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/@babel/runtime/helpers/esm/isNativeReflectConstruct.js":
+/*!*********************************************************************************************************************************!*\
+  !*** ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/@babel/runtime/helpers/esm/isNativeReflectConstruct.js ***!
+  \*********************************************************************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => /* binding */ _isNativeReflectConstruct
+/* harmony export */ });
+function _isNativeReflectConstruct() {
+  if (typeof Reflect === "undefined" || !Reflect.construct) return false;
+  if (Reflect.construct.sham) return false;
+  if (typeof Proxy === "function") return true;
+
+  try {
+    Date.prototype.toString.call(Reflect.construct(Date, [], function () {}));
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+
+/***/ }),
+
+/***/ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js":
+/*!**********************************************************************************************************************************!*\
+  !*** ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js ***!
+  \**********************************************************************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => /* binding */ _possibleConstructorReturn
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/typeof */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/@babel/runtime/helpers/esm/typeof.js");
+/* harmony import */ var _babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/assertThisInitialized */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js");
+
+
+function _possibleConstructorReturn(self, call) {
+  if (call && ((0,_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__.default)(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return (0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_1__.default)(self);
+}
+
+/***/ }),
+
+/***/ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js":
+/*!***********************************************************************************************************************!*\
+  !*** ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js ***!
+  \***********************************************************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => /* binding */ _setPrototypeOf
+/* harmony export */ });
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+/***/ }),
+
+/***/ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/@babel/runtime/helpers/esm/typeof.js":
+/*!***************************************************************************************************************!*\
+  !*** ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/@babel/runtime/helpers/esm/typeof.js ***!
+  \***************************************************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => /* binding */ _typeof
+/* harmony export */ });
+function _typeof(obj) {
+  "@babel/helpers - typeof";
+
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    _typeof = function _typeof(obj) {
+      return typeof obj;
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+
+  return _typeof(obj);
+}
+
+/***/ }),
+
+/***/ "./src/detail/index.ts":
+/*!*****************************!*\
+  !*** ./src/detail/index.ts ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _usr_local_lib_node_modules_hummer_cli_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/@babel/runtime/helpers/esm/classCallCheck */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _usr_local_lib_node_modules_hummer_cli_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/@babel/runtime/helpers/esm/inherits */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var _usr_local_lib_node_modules_hummer_cli_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/@babel/runtime/helpers/esm/createSuper */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/@babel/runtime/helpers/esm/createSuper.js");
+/* harmony import */ var _usr_local_lib_node_modules_hummer_cli_node_modules_core_js_pure_stable_json_stringify_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/stable/json/stringify.js */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/stable/json/stringify.js");
+/* harmony import */ var _usr_local_lib_node_modules_hummer_cli_node_modules_core_js_pure_stable_json_stringify_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_usr_local_lib_node_modules_hummer_cli_node_modules_core_js_pure_stable_json_stringify_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _hummer_hummer_front__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @hummer/hummer-front */ "@hummer/hummer-front");
+/* harmony import */ var _hummer_hummer_front__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_hummer_hummer_front__WEBPACK_IMPORTED_MODULE_4__);
+
+
+
+
+
+
+var RootView = /*#__PURE__*/function (_View) {
+  (0,_usr_local_lib_node_modules_hummer_cli_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_1__.default)(RootView, _View);
+
+  var _super = (0,_usr_local_lib_node_modules_hummer_cli_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_2__.default)(RootView);
+
+  function RootView() {
+    var _this;
+
+    (0,_usr_local_lib_node_modules_hummer_cli_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__.default)(this, RootView);
+
+    _this = _super.call(this);
+    _this.style = {
+      width: '100%',
+      height: '100%'
+    };
+    var textView = new _hummer_hummer_front__WEBPACK_IMPORTED_MODULE_4__.TextArea();
+    textView.style = {
+      width: '100%',
+      height: '100%'
+    };
+
+    _this.appendChild(textView);
+
+    var request = new _hummer_hummer_front__WEBPACK_IMPORTED_MODULE_4__.Request();
+    request.url = _hummer_hummer_front__WEBPACK_IMPORTED_MODULE_4__.Hummer.pageInfo.params.url;
+    request.send(function (res) {
+      textView.text = _usr_local_lib_node_modules_hummer_cli_node_modules_core_js_pure_stable_json_stringify_js__WEBPACK_IMPORTED_MODULE_3___default()(res);
+    });
+    return _this;
+  }
+
+  return RootView;
+}(_hummer_hummer_front__WEBPACK_IMPORTED_MODULE_4__.View);
+
+_hummer_hummer_front__WEBPACK_IMPORTED_MODULE_4__.Hummer.render(new RootView());
+
+/***/ }),
+
+/***/ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/es/json/stringify.js":
+/*!************************************************************************************************************!*\
+  !*** ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/es/json/stringify.js ***!
+  \************************************************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+__webpack_require__(/*! ../../modules/es.json.stringify */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/modules/es.json.stringify.js");
+var core = __webpack_require__(/*! ../../internals/path */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/path.js");
+
+if (!core.JSON) core.JSON = { stringify: JSON.stringify };
+
+// eslint-disable-next-line no-unused-vars
+module.exports = function stringify(it, replacer, space) {
+  return core.JSON.stringify.apply(null, arguments);
+};
+
+
+/***/ }),
+
+/***/ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/a-function.js":
+/*!***************************************************************************************************************!*\
+  !*** ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/a-function.js ***!
+  \***************************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = function (it) {
+  if (typeof it != 'function') {
+    throw TypeError(String(it) + ' is not a function');
+  } return it;
+};
+
+
+/***/ }),
+
+/***/ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/an-object.js":
+/*!**************************************************************************************************************!*\
+  !*** ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/an-object.js ***!
+  \**************************************************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var isObject = __webpack_require__(/*! ../internals/is-object */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/is-object.js");
+
+module.exports = function (it) {
+  if (!isObject(it)) {
+    throw TypeError(String(it) + ' is not an object');
+  } return it;
+};
+
+
+/***/ }),
+
+/***/ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/classof-raw.js":
+/*!****************************************************************************************************************!*\
+  !*** ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/classof-raw.js ***!
+  \****************************************************************************************************************/
+/***/ ((module) => {
+
+var toString = {}.toString;
+
+module.exports = function (it) {
+  return toString.call(it).slice(8, -1);
+};
+
+
+/***/ }),
+
+/***/ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/create-non-enumerable-property.js":
+/*!***********************************************************************************************************************************!*\
+  !*** ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/create-non-enumerable-property.js ***!
+  \***********************************************************************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var DESCRIPTORS = __webpack_require__(/*! ../internals/descriptors */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/descriptors.js");
+var definePropertyModule = __webpack_require__(/*! ../internals/object-define-property */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/object-define-property.js");
+var createPropertyDescriptor = __webpack_require__(/*! ../internals/create-property-descriptor */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/create-property-descriptor.js");
+
+module.exports = DESCRIPTORS ? function (object, key, value) {
+  return definePropertyModule.f(object, key, createPropertyDescriptor(1, value));
+} : function (object, key, value) {
+  object[key] = value;
+  return object;
+};
+
+
+/***/ }),
+
+/***/ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/create-property-descriptor.js":
+/*!*******************************************************************************************************************************!*\
+  !*** ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/create-property-descriptor.js ***!
+  \*******************************************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = function (bitmap, value) {
+  return {
+    enumerable: !(bitmap & 1),
+    configurable: !(bitmap & 2),
+    writable: !(bitmap & 4),
+    value: value
+  };
+};
+
+
+/***/ }),
+
+/***/ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/descriptors.js":
+/*!****************************************************************************************************************!*\
+  !*** ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/descriptors.js ***!
+  \****************************************************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var fails = __webpack_require__(/*! ../internals/fails */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/fails.js");
+
+// Detect IE8's incomplete defineProperty implementation
+module.exports = !fails(function () {
+  return Object.defineProperty({}, 1, { get: function () { return 7; } })[1] != 7;
+});
+
+
+/***/ }),
+
+/***/ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/document-create-element.js":
+/*!****************************************************************************************************************************!*\
+  !*** ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/document-create-element.js ***!
+  \****************************************************************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var global = __webpack_require__(/*! ../internals/global */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/global.js");
+var isObject = __webpack_require__(/*! ../internals/is-object */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/is-object.js");
+
+var document = global.document;
+// typeof document.createElement is 'object' in old IE
+var EXISTS = isObject(document) && isObject(document.createElement);
+
+module.exports = function (it) {
+  return EXISTS ? document.createElement(it) : {};
+};
+
+
+/***/ }),
+
+/***/ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/export.js":
+/*!***********************************************************************************************************!*\
+  !*** ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/export.js ***!
+  \***********************************************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+var global = __webpack_require__(/*! ../internals/global */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/global.js");
+var getOwnPropertyDescriptor = __webpack_require__(/*! ../internals/object-get-own-property-descriptor */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/object-get-own-property-descriptor.js").f;
+var isForced = __webpack_require__(/*! ../internals/is-forced */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/is-forced.js");
+var path = __webpack_require__(/*! ../internals/path */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/path.js");
+var bind = __webpack_require__(/*! ../internals/function-bind-context */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/function-bind-context.js");
+var createNonEnumerableProperty = __webpack_require__(/*! ../internals/create-non-enumerable-property */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/create-non-enumerable-property.js");
+var has = __webpack_require__(/*! ../internals/has */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/has.js");
+
+var wrapConstructor = function (NativeConstructor) {
+  var Wrapper = function (a, b, c) {
+    if (this instanceof NativeConstructor) {
+      switch (arguments.length) {
+        case 0: return new NativeConstructor();
+        case 1: return new NativeConstructor(a);
+        case 2: return new NativeConstructor(a, b);
+      } return new NativeConstructor(a, b, c);
+    } return NativeConstructor.apply(this, arguments);
+  };
+  Wrapper.prototype = NativeConstructor.prototype;
+  return Wrapper;
+};
+
+/*
+  options.target      - name of the target object
+  options.global      - target is the global object
+  options.stat        - export as static methods of target
+  options.proto       - export as prototype methods of target
+  options.real        - real prototype method for the `pure` version
+  options.forced      - export even if the native feature is available
+  options.bind        - bind methods to the target, required for the `pure` version
+  options.wrap        - wrap constructors to preventing global pollution, required for the `pure` version
+  options.unsafe      - use the simple assignment of property instead of delete + defineProperty
+  options.sham        - add a flag to not completely full polyfills
+  options.enumerable  - export as enumerable property
+  options.noTargetGet - prevent calling a getter on target
+*/
+module.exports = function (options, source) {
+  var TARGET = options.target;
+  var GLOBAL = options.global;
+  var STATIC = options.stat;
+  var PROTO = options.proto;
+
+  var nativeSource = GLOBAL ? global : STATIC ? global[TARGET] : (global[TARGET] || {}).prototype;
+
+  var target = GLOBAL ? path : path[TARGET] || (path[TARGET] = {});
+  var targetPrototype = target.prototype;
+
+  var FORCED, USE_NATIVE, VIRTUAL_PROTOTYPE;
+  var key, sourceProperty, targetProperty, nativeProperty, resultProperty, descriptor;
+
+  for (key in source) {
+    FORCED = isForced(GLOBAL ? key : TARGET + (STATIC ? '.' : '#') + key, options.forced);
+    // contains in native
+    USE_NATIVE = !FORCED && nativeSource && has(nativeSource, key);
+
+    targetProperty = target[key];
+
+    if (USE_NATIVE) if (options.noTargetGet) {
+      descriptor = getOwnPropertyDescriptor(nativeSource, key);
+      nativeProperty = descriptor && descriptor.value;
+    } else nativeProperty = nativeSource[key];
+
+    // export native or implementation
+    sourceProperty = (USE_NATIVE && nativeProperty) ? nativeProperty : source[key];
+
+    if (USE_NATIVE && typeof targetProperty === typeof sourceProperty) continue;
+
+    // bind timers to global for call from export context
+    if (options.bind && USE_NATIVE) resultProperty = bind(sourceProperty, global);
+    // wrap global constructors for prevent changs in this version
+    else if (options.wrap && USE_NATIVE) resultProperty = wrapConstructor(sourceProperty);
+    // make static versions for prototype methods
+    else if (PROTO && typeof sourceProperty == 'function') resultProperty = bind(Function.call, sourceProperty);
+    // default case
+    else resultProperty = sourceProperty;
+
+    // add a flag to not completely full polyfills
+    if (options.sham || (sourceProperty && sourceProperty.sham) || (targetProperty && targetProperty.sham)) {
+      createNonEnumerableProperty(resultProperty, 'sham', true);
+    }
+
+    target[key] = resultProperty;
+
+    if (PROTO) {
+      VIRTUAL_PROTOTYPE = TARGET + 'Prototype';
+      if (!has(path, VIRTUAL_PROTOTYPE)) {
+        createNonEnumerableProperty(path, VIRTUAL_PROTOTYPE, {});
+      }
+      // export virtual prototype methods
+      path[VIRTUAL_PROTOTYPE][key] = sourceProperty;
+      // export real prototype methods
+      if (options.real && targetPrototype && !targetPrototype[key]) {
+        createNonEnumerableProperty(targetPrototype, key, sourceProperty);
+      }
+    }
+  }
+};
+
+
+/***/ }),
+
+/***/ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/fails.js":
+/*!**********************************************************************************************************!*\
+  !*** ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/fails.js ***!
+  \**********************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = function (exec) {
+  try {
+    return !!exec();
+  } catch (error) {
+    return true;
+  }
+};
+
+
+/***/ }),
+
+/***/ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/function-bind-context.js":
+/*!**************************************************************************************************************************!*\
+  !*** ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/function-bind-context.js ***!
+  \**************************************************************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var aFunction = __webpack_require__(/*! ../internals/a-function */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/a-function.js");
+
+// optional / simple context binding
+module.exports = function (fn, that, length) {
+  aFunction(fn);
+  if (that === undefined) return fn;
+  switch (length) {
+    case 0: return function () {
+      return fn.call(that);
+    };
+    case 1: return function (a) {
+      return fn.call(that, a);
+    };
+    case 2: return function (a, b) {
+      return fn.call(that, a, b);
+    };
+    case 3: return function (a, b, c) {
+      return fn.call(that, a, b, c);
+    };
+  }
+  return function (/* ...args */) {
+    return fn.apply(that, arguments);
+  };
+};
+
+
+/***/ }),
+
+/***/ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/get-built-in.js":
+/*!*****************************************************************************************************************!*\
+  !*** ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/get-built-in.js ***!
+  \*****************************************************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var path = __webpack_require__(/*! ../internals/path */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/path.js");
+var global = __webpack_require__(/*! ../internals/global */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/global.js");
+
+var aFunction = function (variable) {
+  return typeof variable == 'function' ? variable : undefined;
+};
+
+module.exports = function (namespace, method) {
+  return arguments.length < 2 ? aFunction(path[namespace]) || aFunction(global[namespace])
+    : path[namespace] && path[namespace][method] || global[namespace] && global[namespace][method];
+};
+
+
+/***/ }),
+
+/***/ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/global.js":
+/*!***********************************************************************************************************!*\
+  !*** ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/global.js ***!
+  \***********************************************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var check = function (it) {
+  return it && it.Math == Math && it;
+};
+
+// https://github.com/zloirock/core-js/issues/86#issuecomment-115759028
+module.exports =
+  // eslint-disable-next-line no-undef
+  check(typeof globalThis == 'object' && globalThis) ||
+  check(typeof window == 'object' && window) ||
+  check(typeof self == 'object' && self) ||
+  check(typeof __webpack_require__.g == 'object' && __webpack_require__.g) ||
+  // eslint-disable-next-line no-new-func
+  (function () { return this; })() || Function('return this')();
+
+
+/***/ }),
+
+/***/ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/has.js":
+/*!********************************************************************************************************!*\
+  !*** ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/has.js ***!
+  \********************************************************************************************************/
+/***/ ((module) => {
+
+var hasOwnProperty = {}.hasOwnProperty;
+
+module.exports = function (it, key) {
+  return hasOwnProperty.call(it, key);
+};
+
+
+/***/ }),
+
+/***/ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/ie8-dom-define.js":
+/*!*******************************************************************************************************************!*\
+  !*** ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/ie8-dom-define.js ***!
+  \*******************************************************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var DESCRIPTORS = __webpack_require__(/*! ../internals/descriptors */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/descriptors.js");
+var fails = __webpack_require__(/*! ../internals/fails */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/fails.js");
+var createElement = __webpack_require__(/*! ../internals/document-create-element */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/document-create-element.js");
+
+// Thank's IE8 for his funny defineProperty
+module.exports = !DESCRIPTORS && !fails(function () {
+  return Object.defineProperty(createElement('div'), 'a', {
+    get: function () { return 7; }
+  }).a != 7;
+});
+
+
+/***/ }),
+
+/***/ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/indexed-object.js":
+/*!*******************************************************************************************************************!*\
+  !*** ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/indexed-object.js ***!
+  \*******************************************************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var fails = __webpack_require__(/*! ../internals/fails */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/fails.js");
+var classof = __webpack_require__(/*! ../internals/classof-raw */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/classof-raw.js");
+
+var split = ''.split;
+
+// fallback for non-array-like ES3 and non-enumerable old V8 strings
+module.exports = fails(function () {
+  // throws an error in rhino, see https://github.com/mozilla/rhino/issues/346
+  // eslint-disable-next-line no-prototype-builtins
+  return !Object('z').propertyIsEnumerable(0);
+}) ? function (it) {
+  return classof(it) == 'String' ? split.call(it, '') : Object(it);
+} : Object;
+
+
+/***/ }),
+
+/***/ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/is-forced.js":
+/*!**************************************************************************************************************!*\
+  !*** ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/is-forced.js ***!
+  \**************************************************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var fails = __webpack_require__(/*! ../internals/fails */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/fails.js");
+
+var replacement = /#|\.prototype\./;
+
+var isForced = function (feature, detection) {
+  var value = data[normalize(feature)];
+  return value == POLYFILL ? true
+    : value == NATIVE ? false
+    : typeof detection == 'function' ? fails(detection)
+    : !!detection;
+};
+
+var normalize = isForced.normalize = function (string) {
+  return String(string).replace(replacement, '.').toLowerCase();
+};
+
+var data = isForced.data = {};
+var NATIVE = isForced.NATIVE = 'N';
+var POLYFILL = isForced.POLYFILL = 'P';
+
+module.exports = isForced;
+
+
+/***/ }),
+
+/***/ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/is-object.js":
+/*!**************************************************************************************************************!*\
+  !*** ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/is-object.js ***!
+  \**************************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = function (it) {
+  return typeof it === 'object' ? it !== null : typeof it === 'function';
+};
+
+
+/***/ }),
+
+/***/ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/object-define-property.js":
+/*!***************************************************************************************************************************!*\
+  !*** ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/object-define-property.js ***!
+  \***************************************************************************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+var DESCRIPTORS = __webpack_require__(/*! ../internals/descriptors */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/descriptors.js");
+var IE8_DOM_DEFINE = __webpack_require__(/*! ../internals/ie8-dom-define */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/ie8-dom-define.js");
+var anObject = __webpack_require__(/*! ../internals/an-object */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/an-object.js");
+var toPrimitive = __webpack_require__(/*! ../internals/to-primitive */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/to-primitive.js");
+
+var nativeDefineProperty = Object.defineProperty;
+
+// `Object.defineProperty` method
+// https://tc39.es/ecma262/#sec-object.defineproperty
+exports.f = DESCRIPTORS ? nativeDefineProperty : function defineProperty(O, P, Attributes) {
+  anObject(O);
+  P = toPrimitive(P, true);
+  anObject(Attributes);
+  if (IE8_DOM_DEFINE) try {
+    return nativeDefineProperty(O, P, Attributes);
+  } catch (error) { /* empty */ }
+  if ('get' in Attributes || 'set' in Attributes) throw TypeError('Accessors not supported');
+  if ('value' in Attributes) O[P] = Attributes.value;
+  return O;
+};
+
+
+/***/ }),
+
+/***/ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/object-get-own-property-descriptor.js":
+/*!***************************************************************************************************************************************!*\
+  !*** ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/object-get-own-property-descriptor.js ***!
+  \***************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+var DESCRIPTORS = __webpack_require__(/*! ../internals/descriptors */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/descriptors.js");
+var propertyIsEnumerableModule = __webpack_require__(/*! ../internals/object-property-is-enumerable */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/object-property-is-enumerable.js");
+var createPropertyDescriptor = __webpack_require__(/*! ../internals/create-property-descriptor */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/create-property-descriptor.js");
+var toIndexedObject = __webpack_require__(/*! ../internals/to-indexed-object */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/to-indexed-object.js");
+var toPrimitive = __webpack_require__(/*! ../internals/to-primitive */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/to-primitive.js");
+var has = __webpack_require__(/*! ../internals/has */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/has.js");
+var IE8_DOM_DEFINE = __webpack_require__(/*! ../internals/ie8-dom-define */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/ie8-dom-define.js");
+
+var nativeGetOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
+
+// `Object.getOwnPropertyDescriptor` method
+// https://tc39.es/ecma262/#sec-object.getownpropertydescriptor
+exports.f = DESCRIPTORS ? nativeGetOwnPropertyDescriptor : function getOwnPropertyDescriptor(O, P) {
+  O = toIndexedObject(O);
+  P = toPrimitive(P, true);
+  if (IE8_DOM_DEFINE) try {
+    return nativeGetOwnPropertyDescriptor(O, P);
+  } catch (error) { /* empty */ }
+  if (has(O, P)) return createPropertyDescriptor(!propertyIsEnumerableModule.f.call(O, P), O[P]);
+};
+
+
+/***/ }),
+
+/***/ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/object-property-is-enumerable.js":
+/*!**********************************************************************************************************************************!*\
+  !*** ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/object-property-is-enumerable.js ***!
+  \**********************************************************************************************************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+var nativePropertyIsEnumerable = {}.propertyIsEnumerable;
+var getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
+
+// Nashorn ~ JDK8 bug
+var NASHORN_BUG = getOwnPropertyDescriptor && !nativePropertyIsEnumerable.call({ 1: 2 }, 1);
+
+// `Object.prototype.propertyIsEnumerable` method implementation
+// https://tc39.es/ecma262/#sec-object.prototype.propertyisenumerable
+exports.f = NASHORN_BUG ? function propertyIsEnumerable(V) {
+  var descriptor = getOwnPropertyDescriptor(this, V);
+  return !!descriptor && descriptor.enumerable;
+} : nativePropertyIsEnumerable;
+
+
+/***/ }),
+
+/***/ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/path.js":
+/*!*********************************************************************************************************!*\
+  !*** ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/path.js ***!
+  \*********************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {};
+
+
+/***/ }),
+
+/***/ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/require-object-coercible.js":
+/*!*****************************************************************************************************************************!*\
+  !*** ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/require-object-coercible.js ***!
+  \*****************************************************************************************************************************/
+/***/ ((module) => {
+
+// `RequireObjectCoercible` abstract operation
+// https://tc39.es/ecma262/#sec-requireobjectcoercible
+module.exports = function (it) {
+  if (it == undefined) throw TypeError("Can't call method on " + it);
+  return it;
+};
+
+
+/***/ }),
+
+/***/ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/to-indexed-object.js":
+/*!**********************************************************************************************************************!*\
+  !*** ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/to-indexed-object.js ***!
+  \**********************************************************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+// toObject with fallback for non-array-like ES3 strings
+var IndexedObject = __webpack_require__(/*! ../internals/indexed-object */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/indexed-object.js");
+var requireObjectCoercible = __webpack_require__(/*! ../internals/require-object-coercible */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/require-object-coercible.js");
+
+module.exports = function (it) {
+  return IndexedObject(requireObjectCoercible(it));
+};
+
+
+/***/ }),
+
+/***/ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/to-primitive.js":
+/*!*****************************************************************************************************************!*\
+  !*** ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/to-primitive.js ***!
+  \*****************************************************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var isObject = __webpack_require__(/*! ../internals/is-object */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/is-object.js");
+
+// `ToPrimitive` abstract operation
+// https://tc39.es/ecma262/#sec-toprimitive
+// instead of the ES6 spec version, we didn't implement @@toPrimitive case
+// and the second argument - flag - preferred type is a string
+module.exports = function (input, PREFERRED_STRING) {
+  if (!isObject(input)) return input;
+  var fn, val;
+  if (PREFERRED_STRING && typeof (fn = input.toString) == 'function' && !isObject(val = fn.call(input))) return val;
+  if (typeof (fn = input.valueOf) == 'function' && !isObject(val = fn.call(input))) return val;
+  if (!PREFERRED_STRING && typeof (fn = input.toString) == 'function' && !isObject(val = fn.call(input))) return val;
+  throw TypeError("Can't convert object to primitive value");
+};
+
+
+/***/ }),
+
+/***/ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/modules/es.json.stringify.js":
+/*!********************************************************************************************************************!*\
+  !*** ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/modules/es.json.stringify.js ***!
+  \********************************************************************************************************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+var $ = __webpack_require__(/*! ../internals/export */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/export.js");
+var getBuiltIn = __webpack_require__(/*! ../internals/get-built-in */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/get-built-in.js");
+var fails = __webpack_require__(/*! ../internals/fails */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/internals/fails.js");
+
+var $stringify = getBuiltIn('JSON', 'stringify');
+var re = /[\uD800-\uDFFF]/g;
+var low = /^[\uD800-\uDBFF]$/;
+var hi = /^[\uDC00-\uDFFF]$/;
+
+var fix = function (match, offset, string) {
+  var prev = string.charAt(offset - 1);
+  var next = string.charAt(offset + 1);
+  if ((low.test(match) && !hi.test(next)) || (hi.test(match) && !low.test(prev))) {
+    return '\\u' + match.charCodeAt(0).toString(16);
+  } return match;
+};
+
+var FORCED = fails(function () {
+  return $stringify('\uDF06\uD834') !== '"\\udf06\\ud834"'
+    || $stringify('\uDEAD') !== '"\\udead"';
+});
+
+if ($stringify) {
+  // `JSON.stringify` method
+  // https://tc39.es/ecma262/#sec-json.stringify
+  // https://github.com/tc39/proposal-well-formed-stringify
+  $({ target: 'JSON', stat: true, forced: FORCED }, {
+    // eslint-disable-next-line no-unused-vars
+    stringify: function stringify(it, replacer, space) {
+      var result = $stringify.apply(null, arguments);
+      return typeof result == 'string' ? result.replace(re, fix) : result;
+    }
+  });
+}
+
+
+/***/ }),
+
+/***/ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/stable/json/stringify.js":
+/*!****************************************************************************************************************!*\
+  !*** ../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/stable/json/stringify.js ***!
+  \****************************************************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var parent = __webpack_require__(/*! ../../es/json/stringify */ "../../../../../usr/local/lib/node_modules/@hummer/cli/node_modules/core-js-pure/es/json/stringify.js");
+
+module.exports = parent;
+
+
+/***/ }),
+
+/***/ "@hummer/hummer-front":
+/*!*****************************!*\
+  !*** external "__GLOBAL__" ***!
+  \*****************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = __GLOBAL__;
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		if(__webpack_module_cache__[moduleId]) {
+/******/ 			return __webpack_module_cache__[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => module['default'] :
+/******/ 				() => module;
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => Object.prototype.hasOwnProperty.call(obj, prop)
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+/******/ 	// startup
+/******/ 	// Load entry module
+/******/ 	__webpack_require__("./src/detail/index.ts");
+/******/ 	// This entry module used 'exports' so it can't be inlined
+/******/ })()
+;
+//# sourceMappingURL=detail.js.map
